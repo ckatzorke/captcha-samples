@@ -22,6 +22,7 @@
 
 <link rel="stylesheet" href="jumbotron.css" />
 <title>Captcha</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -29,9 +30,9 @@
 		<div class="header clearfix">
 			<nav>
 				<ul class="nav nav-pills pull-right">
-					<li role="presentation" class="active"><a href="/captcha.html">Home</a></li>
+					<li role="presentation"><a href="/captcha.html">Home</a></li>
 					<li role="presentation"><a href="/cage.html">Cage</a></li>
-					<li role="presentation"><a href="/recaptcha.html">reCaptcha</a></li>
+					<li role="presentation" class="active"><a href="/recaptcha.html">reCaptcha</a></li>
 				</ul>
 			</nav>
 			<h3 class="text-muted">Captcha Sample</h3>
@@ -42,7 +43,16 @@
 		</div>
 
 		<div class="row marketing">
-				captcha-samples
+				<h4><a href="https://www.google.com/recaptcha/intro/index.html">Google reCaptcha</a></h4>
+				<p></p>
+				<form class="form-horizontal">
+					<div class="form-group" id="gcageform">
+						<div class="g-recaptcha" data-sitekey="6LfuXhETAAAAAAFt9_phps2VdbyqZb8WIL4YCUqH"></div>
+					</div>
+				</form>
+				<button type="button" class="btn btn-default" id="recaptcha" title="Validate">
+				  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+				</button>
 		</div>
 
 
@@ -57,5 +67,7 @@
 		integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 		crossorigin="anonymous"></script>
 
+	<!-- custom js -->
+	<script src="captcha.js"></script>
 </body>
 </html>

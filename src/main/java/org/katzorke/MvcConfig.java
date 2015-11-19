@@ -10,6 +10,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/captcha.html").setViewName("captcha");
+        registry.addViewController("/cage.html").setViewName("cage");
+        registry.addViewController("/recaptcha.html").setViewName("recaptcha");
     }
 
 }

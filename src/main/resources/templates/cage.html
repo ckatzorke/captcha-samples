@@ -29,8 +29,8 @@
 		<div class="header clearfix">
 			<nav>
 				<ul class="nav nav-pills pull-right">
-					<li role="presentation" class="active"><a href="/captcha.html">Home</a></li>
-					<li role="presentation"><a href="/cage.html">Cage</a></li>
+					<li role="presentation"><a href="#">Home</a></li>
+					<li role="presentation" class="active"><a href="/cage.html">Cage</a></li>
 					<li role="presentation"><a href="/recaptcha.html">reCaptcha</a></li>
 				</ul>
 			</nav>
@@ -42,7 +42,42 @@
 		</div>
 
 		<div class="row marketing">
-				captcha-samples
+				<h4><a href="https://akiraly.github.io/cage/index.html">Cage</a></h4>
+				<p>GCage implementation</p>
+				<form class="form-horizontal">
+					<div class="form-group" id="gcageform">
+						<div class="col-md-4">
+							<img src="/cage/gcaptcha"/>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="gcage"
+								placeholder="captcha"/>
+						</div>
+						<div class="col-md-2">
+							<button type="button" class="btn btn-default" id="gcagebtn" title="Validate">
+							  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+				<p>YCage implementation</p>
+				<form class="form-horizontal">
+					<div class="form-group" id="ycageform">
+						<div class="col-md-4">
+							<img src="/cage/ycaptcha"/>
+						</div>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="ycage"
+								placeholder="captcha"/>
+						</div>
+						<div class="col-md-2">
+							<button type="button" class="btn btn-default" id="ycagebtn" title="Validate">
+							  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+
 		</div>
 
 
@@ -57,5 +92,7 @@
 		integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
 		crossorigin="anonymous"></script>
 
+	<!-- custom js -->
+	<script src="cage.js"></script>
 </body>
 </html>
