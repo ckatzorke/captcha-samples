@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.katzorke.model;
+package org.katzorke.cage;
 
 import java.util.Date;
 

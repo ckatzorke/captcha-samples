@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html lang="en">
 <head lang="en">
 
 <meta charset="utf-8" />
@@ -22,7 +22,7 @@
 
 <link rel="stylesheet" href="jumbotron.css" />
 <title>Captcha</title>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script th:src="@{https://www.google.com/recaptcha/api.js(onload='loadCaptcha', render='explicit')}" async="async" defer="defer"></script>
 </head>
 <body>
 
@@ -44,13 +44,12 @@
 
 		<div class="row marketing">
 				<h4><a href="https://www.google.com/recaptcha/intro/index.html">Google reCaptcha</a></h4>
-				<p></p>
+				<p>Make sure to provide the correct sitekey (in recaptcha.js) and secretkey (as property <i>grecaptcha.secretKey</i>)</p>
 				<form class="form-horizontal">
-					<div class="form-group" id="gcageform">
-						<div class="g-recaptcha" data-sitekey="6LfuXhETAAAAAAFt9_phps2VdbyqZb8WIL4YCUqH"></div>
+					<div class="form-group" id="recaptcha">
 					</div>
 				</form>
-				<button type="button" class="btn btn-default" id="recaptcha" title="Validate">
+				<button type="button" class="btn btn-default" id="recaptchaValidate" title="Validate">
 				  <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 				</button>
 		</div>
@@ -68,6 +67,6 @@
 		crossorigin="anonymous"></script>
 
 	<!-- custom js -->
-	<script src="captcha.js"></script>
+	<script src="recaptcha.js"></script>
 </body>
 </html>
