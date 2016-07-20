@@ -8,6 +8,11 @@ Start as boot app
 and visit http://localhost:8080/captcha.html
 
 
-# note for Google reCaptcha
+# Google reCaptcha
 
 Get your own keyset from https://www.google.com/recaptcha/admin#list
+If you do not want to use reCaptcha, you still have to provide a secret, but just use anystring
+
+# Cage
+
+Infos: https://akiraly.github.io/cage/
